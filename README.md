@@ -42,6 +42,6 @@ n     = number of observations.
 "t" the traditional t test. 
 "GNS" is the generalized normal scores test. 
 "GNS-t" is the level of significance for the GNS test minus that of the t test.
-
+  
 
 
