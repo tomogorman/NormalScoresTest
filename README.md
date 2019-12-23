@@ -14,15 +14,14 @@ alternative that the parameter does not equal zero.
 
 The files are:
 
-        File name                   Model
-_______________________________________________________________________
-
-ns.size.twosample.txt            Two-samples
-ns.size.slr.txt                  Simple linear regression
-ns.size.2cov.nor.txt             2 normally distributed covariates
-ns.size.2cov.ln.txt              2 lognormally distributed covariates 
-ns.size.4cov.nor.txt             4 normally distributed covariates
-ns.size.4cov.ln.txt              4 lognormally distributed covariates
+|        File name       |            Model |
+|----------------|:--------------:|
+| ns.size.twosample.txt |            Two-samples
+| ns.size.slr.txt         |          Simple linear regression
+| ns.size.2cov.nor.txt     |        2 normally distributed covariates
+| ns.size.2cov.ln.txt      |        2 lognormally distributed covariates 
+| ns.size.4cov.nor.txt     |        4 normally distributed covariates
+| ns.size.4cov.ln.txt       |       4 lognormally distributed covariates
 
 In each file the significance level is given for the t test and 
 the GNS test for models having 8 error distributions and 7 sample 
