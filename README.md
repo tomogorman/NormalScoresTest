@@ -32,14 +32,23 @@ are models with 3 levels of correlation between the covariates.
 The following notation is used in these files:
 
 alpha = 0.05 was used as the nominal level of significance for all tests.
+
 "n of permutations" was not used in these simulations.
+
 rho   = the correlation between two covariates in the model.
+
 ic    = the number of parameters in the full model.
+
 icred = number of parameters in the reduced model.
+
 n     = number of observations.
+
 "Distribution" is the distribution of the errors that were generated.
+
 "t" the traditional t test. 
-"GNS" is the generalized normal scores test. 
+
+"GNS" is the generalized normal scores test.
+
 "GNS-t" is the level of significance for the GNS test minus that of the t test.
   
 
