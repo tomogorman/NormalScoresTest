@@ -1,0 +1,193 @@
+ 
+This file gives the empirical power for the generalized
+normal scores (GNS) test that is described in the manuscript:
+
+O'Gorman, T. W. (2020) A Generalized Normal Scores Test of Significance
+for any Coefficient in a Linear Model. (Submitted for publication.)
+
+In each of these simulations 1000 data sets were generated and the
+traditional t-test and the GNS test were used to test the null hypothesis
+that the last parameter in the model equals zero, against the two-sided
+alternative that the parameter does not equal zero.
+
+Notation:
+
+alpha = 0.05 was used as the nominal level of significance for all tests.
+"n of permutations" was not used in this simulation.
+rho   = the correlation between two covariates in the model.
+ic    = the number of parameters in the full model.
+icred = number of parameters in the reduced model.
+n     = number of observations.
+"Distribution" is the distribution of the errors that were generated.
+"t" the traditional t test
+"Adaptive" is the adaptive test described in O'Gorman, T. W. (2012)
+"Permwts" is a permute weights test described by 
+          O'Gorman, T. W. in an unpublished manuscript.
+"GNS" is the generalized normal scores test 
+"GNS-t" is the level of significance for the GNS test minus that of the t test
+
+The covariate was generated for a simple linear regression model 
+from a normal distribution.
+
+  X generated from Normal
+  Slope equal 4.0/sqrt(n) to achieve power=0.80
+
+  number of data sets    alpha  n of permutations  rho    ic  icred
+      1000               0.050      2000         0.000     3     2
+
+  n     Distribution        slope   t  Adaptive  Permwts  GNS  GNS-t
+
+  15  4 Normal               0.749 66.70  65.00  64.70  63.70  -3.00
+  15 12 Bimodal +-1.5        0.749 67.30  65.60  66.20  63.00  -4.30
+  15 14 t with d.f. = 4      0.749 70.10  70.90  70.50  69.50  -0.60
+  15 31 RST a3=1 a4=4.2      0.749 67.80  68.70  68.40  67.10  -0.70
+  15 33 RST a3=1 a4=8.4      0.749 70.00  71.70  71.50  71.90   1.90
+  15 34 RST a3=2 a4=11.4     0.749 73.40  76.20  76.60  75.10   1.70
+  15 36 RST a3=2 a4=15.6     0.749 70.80  74.50  74.60  73.60   2.80
+  15 39 Bimodal .75N + .25N  0.749 66.80  67.30  67.00  64.90  -1.90
+
+  25  4 Normal               0.580 72.60  72.10  71.40  70.60  -2.00
+  25 12 Bimodal +-1.5        0.580 72.20  71.70  71.30  69.50  -2.70
+  25 14 t with d.f. = 4      0.580 75.30  79.60  79.60  79.00   3.70
+  25 31 RST a3=1 a4=4.2      0.580 73.50  76.70  76.70  74.80   1.30
+  25 33 RST a3=1 a4=8.4      0.580 74.60  78.50  78.30  77.00   2.40
+  25 34 RST a3=2 a4=11.4     0.580 74.60  83.80  84.00  81.60   7.00
+  25 36 RST a3=2 a4=15.6     0.580 72.40  81.80  81.90  80.00   7.60
+  25 39 Bimodal .75N + .25N  0.580 71.60  76.30  76.10  74.50   2.90
+
+ 100  4 Normal               0.290 80.00  77.60  78.30  79.00  -1.00
+ 100 12 Bimodal +-1.5        0.290 78.00  83.20  82.90  81.60   3.60
+ 100 14 t with d.f. = 4      0.290 81.90  89.90  90.40  89.10   7.20
+ 100 31 RST a3=1 a4=4.2      0.290 80.30  90.60  90.90  88.00   7.70
+ 100 33 RST a3=1 a4=8.4      0.290 80.50  88.70  88.30  87.80   7.30
+ 100 34 RST a3=2 a4=11.4     0.290 82.60  97.90  97.90  95.30  12.70
+ 100 36 RST a3=2 a4=15.6     0.290 80.10  93.70  93.50  91.00  10.90
+ 100 39 Bimodal .75N + .25N  0.290 80.30  94.90  94.70  91.20  10.90
+
+ 400  4 Normal               0.145 82.20  81.70  81.90  82.20   0.00
+ 400 12 Bimodal +-1.5        0.145 83.20  89.70  89.80  88.10   4.90
+ 400 14 t with d.f. = 4      0.145 81.50  91.30  91.10  88.70   7.20
+ 400 31 RST a3=1 a4=4.2      0.145 81.50  94.90  94.80  91.20   9.70
+ 400 33 RST a3=1 a4=8.4      0.145 82.70  92.20  91.90  89.20   6.50
+ 400 34 RST a3=2 a4=11.4     0.145 80.80  99.00  98.90  96.40  15.60
+ 400 36 RST a3=2 a4=15.6     0.145 81.00  96.20  95.80  93.80  12.80
+ 400 39 Bimodal .75N + .25N  0.145 82.70  98.80  98.90  96.10  13.40
+
+
+  X generated from Normal
+  Slope equal 4.0/sqrt(n) to achieve power=0.80
+
+  number of data sets    alpha  n of permutations  rho    ic  icred
+      1000               0.050      2000         0.400     3     2
+
+  n     Distribution        slope    t Adaptive Permwts  GNS  GNS-t
+
+  15  4 Normal                0.749   598   581   576   566   -3.2
+  15 12 Bimodal +-1.5         0.749   555   554   546   526   -2.9
+  15 14 t with d.f. = 4       0.749   674   700   699   682    0.8
+  15 31 RST a3=1 a4=4.2       0.749   609   616   617   594   -1.5
+  15 33 RST a3=1 a4=8.4       0.749   628   644   645   637    0.9
+  15 34 RST a3=2 a4=11.4      0.749   663   706   707   689    2.6
+  15 36 RST a3=2 a4=15.6      0.749   655   681   679   662    0.7
+  15 39 Bimodal .75N + .25N   0.749   612   614   622   607   -0.5
+
+  20  4 Normal                0.648   655   644   650   633   -2.2
+  20 12 Bimodal +-1.5         0.648   605   595   597   578   -2.7
+  20 14 t with d.f. = 4       0.648   659   679   680   681    2.2
+  20 31 RST a3=1 a4=4.2       0.648   650   671   679   675    2.5
+  20 33 RST a3=1 a4=8.4       0.648   682   706   706   696    1.4
+  20 34 RST a3=2 a4=11.4      0.648   697   768   770   754    5.7
+  20 36 RST a3=2 a4=15.6      0.648   679   732   735   701    2.2
+  20 39 Bimodal .75N + .25N   0.648   635   669   671   660    2.5
+
+  25  4 Normal                0.580   681   669   662   663   -1.8
+  25 12 Bimodal +-1.5         0.580   657   650   652   633   -2.4
+  25 14 t with d.f. = 4       0.580   677   715   722   710    3.3
+  25 31 RST a3=1 a4=4.2       0.580   674   709   711   696    2.2
+  25 33 RST a3=1 a4=8.4       0.580   690   736   730   717    2.7
+  25 34 RST a3=2 a4=11.4      0.580   657   763   771   736    7.9
+  25 36 RST a3=2 a4=15.6      0.580   693   776   780   775    8.2
+  25 39 Bimodal .75N + .25N   0.580   630   696   695   683    5.3
+
+  50  4 Normal                0.410   726   718   714   723   -0.3
+  50 12 Bimodal +-1.5         0.410   729   758   754   741    1.2
+  50 14 t with d.f. = 4       0.410   741   801   800   801    6.0
+  50 31 RST a3=1 a4=4.2       0.410   700   768   769   742    4.2
+  50 33 RST a3=1 a4=8.4       0.410   713   773   772   773    6.0
+  50 34 RST a3=2 a4=11.4      0.410   712   881   879   840   12.8
+  50 36 RST a3=2 a4=15.6      0.410   740   857   859   840   10.0
+  50 39 Bimodal .75N + .25N   0.410   700   827   835   801   10.1
+
+ 100  4 Normal                0.290   727   715   718   717   -1.0
+ 100 12 Bimodal +-1.5         0.290   738   788   787   771    3.3
+ 100 14 t with d.f. = 4       0.290   770   853   852   836    6.6
+ 100 31 RST a3=1 a4=4.2       0.290   733   863   863   826    9.3
+ 100 33 RST a3=1 a4=8.4       0.290   740   840   834   819    7.9
+ 100 34 RST a3=2 a4=11.4      0.290   756   934   935   894   13.8
+ 100 36 RST a3=2 a4=15.6      0.290   760   915   916   888   12.8
+ 100 39 Bimodal .75N + .25N   0.290   705   904   902   864   15.9
+
+ 200  4 Normal                0.205   751   753   752   756    0.5
+ 200 12 Bimodal +-1.5         0.205   725   830   829   805    8.0
+ 200 14 t with d.f. = 4       0.205   768   848   843   832    6.4
+ 200 31 RST a3=1 a4=4.2       0.205   764   902   901   870   10.6
+ 200 33 RST a3=1 a4=8.4       0.205   765   851   854   838    7.3
+ 200 34 RST a3=2 a4=11.4      0.205   776   969   970   938   16.2
+ 200 36 RST a3=2 a4=15.6      0.205   742   915   916   884   14.2
+ 200 39 Bimodal .75N + .25N   0.205   738   949   950   902   16.4
+
+ 400  4 Normal                0.145   738   741   738   740    0.2
+ 400 12 Bimodal +-1.5         0.145   753   851   851   820    6.7
+ 400 14 t with d.f. = 4       0.145   740   858   861   833    9.3
+ 400 31 RST a3=1 a4=4.2       0.145   727   890   892   838   11.1
+ 400 33 RST a3=1 a4=8.4       0.145   762   865   865   851    8.9
+ 400 34 RST a3=2 a4=11.4      0.145   745   970   970   931   18.6
+ 400 36 RST a3=2 a4=15.6      0.145   774   932   932   907   13.3
+ 400 39 Bimodal .75N + .25N   0.145   752   966   968   922   17.0
+
+
+  X generated from Normal
+  Slope equal 4.0/sqrt(n) to achieve power=0.80
+
+  number of data sets    alpha  n of permutations  rho    ic  icred
+      1000               0.050      2000         0.800     3     2
+
+  n     Distribution        slope   t  Adaptive  Permwts  GNS  GNS-t
+
+  15  4 Normal               0.749 29.80  29.20  29.40  28.20  -1.60
+  15 12 Bimodal +-1.5        0.749 31.60  31.80  31.30  29.00  -2.60
+  15 14 t with d.f. = 4      0.749 36.70  37.60  37.60  37.90   1.20
+  15 31 RST a3=1 a4=4.2      0.749 34.00  35.30  35.50  34.40   0.40
+  15 33 RST a3=1 a4=8.4      0.749 36.70  38.00  37.80  36.20  -0.50
+  15 34 RST a3=2 a4=11.4     0.749 39.40  45.10  44.20  43.30   3.90
+  15 36 RST a3=2 a4=15.6     0.749 38.80  40.80  41.50  41.70   2.90
+  15 39 Bimodal .75N + .25N  0.749 31.20  34.50  34.20  33.70   2.50
+
+  25  4 Normal               0.580 37.50  35.90  35.90  35.70  -1.80
+  25 12 Bimodal +-1.5        0.580 33.20  34.50  34.20  33.60   0.40
+  25 14 t with d.f. = 4      0.580 39.80  42.30  42.50  41.60   1.80
+  25 31 RST a3=1 a4=4.2      0.580 34.90  39.30  39.30  38.20   3.30
+  25 33 RST a3=1 a4=8.4      0.580 38.00  42.70  43.00  40.50   2.50
+  25 34 RST a3=2 a4=11.4     0.580 42.50  52.10  53.30  50.50   8.00
+  25 36 RST a3=2 a4=15.6     0.580 40.90  47.40  47.70  46.50   5.60
+  25 39 Bimodal .75N + .25N  0.580 33.70  41.10  41.70  40.90   7.20
+
+ 100  4 Normal               0.290 40.00  39.00  39.10  39.70  -0.30
+ 100 12 Bimodal +-1.5        0.290 40.10  46.10  46.80  44.20   4.10
+ 100 14 t with d.f. = 4      0.290 43.00  49.00  49.00  49.40   6.40
+ 100 31 RST a3=1 a4=4.2      0.290 41.60  55.30  56.20  51.20   9.60
+ 100 33 RST a3=1 a4=8.4      0.290 43.80  52.30  52.20  51.10   7.30
+ 100 34 RST a3=2 a4=11.4     0.290 44.00  70.30  69.80  61.20  17.20
+ 100 36 RST a3=2 a4=15.6     0.290 43.90  59.90  59.90  55.60  11.70
+ 100 39 Bimodal .75N + .25N  0.290 41.40  64.70  64.40  57.40  16.00
+
+ 400  4 Normal               0.145 40.40  40.80  40.30  40.50   0.10
+ 400 12 Bimodal +-1.5        0.145 41.50  52.90  52.70  48.30   6.80
+ 400 14 t with d.f. = 4      0.145 41.40  52.40  52.20  50.20   8.80
+ 400 31 RST a3=1 a4=4.2      0.145 39.60  58.30  58.30  52.70  13.10
+ 400 33 RST a3=1 a4=8.4      0.145 42.00  53.60  53.70  51.60   9.60
+ 400 34 RST a3=2 a4=11.4     0.145 41.50  71.80  71.10  62.70  21.20
+ 400 36 RST a3=2 a4=15.6     0.145 43.20  64.30  64.40  58.00  14.80
+ 400 39 Bimodal .75N + .25N  0.145 40.10  72.30  72.80  60.40  20.30
+
+
