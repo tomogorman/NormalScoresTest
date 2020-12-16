@@ -30,7 +30,7 @@ n     = number of observations.
 
 The first group of files give the estimates of the significance level.
 
-In each of these simulations 100000 data sets were generated to accurately
+In each of these simulations 1000000 data sets were generated to accurately
 estimate the significance level of the GNS test. For each of these 
 data sets the traditional t test and the Generalized Normal 
 Scores tests were performed and percent of the data sets that 
