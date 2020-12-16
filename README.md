@@ -41,17 +41,12 @@ The files are:
 
 |        File name     |              Model|
 |----------------------|:------------------:|
-|nsci.ic2.bal.txt      |For two equal samples from two populations|
-|nsci.ic2.nor.txt      |Simple Linear Regression with one Normal covariate|
-|nsci.ic2.ln.txt       |Simple Linear Regression with one Lognormal covariate|
-|nsci.ic3.nor.r0.txt   |Regression with 2 normal covariates correlated r = .0|
-|nsci.ic3.ln.r0.txt    |Regression with 2 lognormal covariates correlated r = .0|
-|nsci.ic3.nor.r4.txt   |Regression with 2 normal covariates correlated r = .4|
-|nsci.ic3.ln.r4.txt    |Regression with 2 lognormal covariates correlated r = .4|
-|nsci.ic3.nor.r8.txt   |Regression with 2 normal covariates correlated r = .8|
-|nsci.ic3.ln.r8.txt    |Regression with 2 lognormal covariates correlated r = .8|
-|nsci.ic5.nor.r4.txt   |Regression with 4 normal covariates correlated r = .4|
-|nsci.ic5.ln.r4.txt    |Regression with 4 lognormal covariates correlated r = .4| 
+|ns.size.twosample.txt |For two equal samples from two populations|
+|ns.size.slr.txt       |Simple Linear Regression Model with one covariate|
+|ns.size.2cov.nor.txt  |Model with 2 normal covariates correlated r = 0.0, 0.4, 0.8|
+|ns.size.2cov.ln.txt   |Model with 2 lognormal covariates correlated r = 0.0, 0.4, 0.8|
+|ns.size.4cov.nor.txt  |Model with 4 normal covariates correlated r = .4|
+|ns.size.4cov.ln.txt   |Model with 4 lognormal covariates correlated r = .4| 
 
 
 
