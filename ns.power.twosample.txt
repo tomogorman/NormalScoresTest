@@ -31,7 +31,7 @@ n     = number of observations.
   number of data sets    alpha  n of permutations  rho    ic  icred
       1000               0.050      2000         0.800     2     1
 
-  n     Distribution         slope    t Adaptive Permwts GNS-t 
+  n     Distribution         slope    t Adaptive Permwts GNS  GNS-t 
 
   50  4 Normal                0.566    490   482   489   489   -0.1
   50 12 Bimodal +-1.5         0.566    477   514   521   521    4.4
