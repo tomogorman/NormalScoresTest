@@ -63,6 +63,7 @@ The files are:
 
 |        File name     |              Model|
 |------------------------|:------------------:|
+| ns.power.twosample.txt |For two equal samples from two populations|
 | ns.power.slr.txt       |Simple Linear Regression Model |
 | ns.power.2cov.nor.txt  |Model with 2 normal covariates correlated r = 0.0, 0.4, 0.8|
 | ns.power.2cov.ln.txt   |Model with 2 lognormal covariates correlated r = 0.0, 0.4, 0.8|
