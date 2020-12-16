@@ -1,0 +1,44 @@
+ 
+This file gives the empirical power for the generalized
+normal scores (GNS) test that is described in the manuscript:
+
+O'Gorman, T. W. (2020) A Generalized Normal Scores Test of Significance
+for any Coefficient in a Linear Model. (Submitted for publication.)
+
+In each of these simulations 1000 data sets were generated and the
+traditional t-test and the GNS test were used to test the null hypothesis
+that the last parameter in the model equals zero, against the two-sided
+alternative that the parameter does not equal zero.
+
+Notation:
+
+alpha = 0.05 was used as the nominal level of significance for all tests.
+"n of permutations" was not used in this simulation.
+rho   = the correlation between two covariates in the model.
+ic    = the number of parameters in the full model.
+icred = number of parameters in the reduced model.
+n     = number of observations.
+"Distribution" is the distribution of the errors that were generated.
+"t" the traditional t test
+"Adaptive" is the adaptive test described in O'Gorman, T. W. (2012)
+"Permwts" is a permute weights test described by 
+          O'Gorman, T. W. in an unpublished manuscript.
+"GNS" is the generalized normal scores test 
+"GNS-t" is the level of significance for the GNS test minus that of the t test
+
+  X specified for two-sample test
+
+  number of data sets    alpha  n of permutations  rho    ic  icred
+      1000               0.050      2000         0.800     2     1
+
+  n     Distribution         slope    t Adaptive Permwts GNS-t 
+
+  50  4 Normal                0.566    490   482   489   489   -0.1
+  50 12 Bimodal +-1.5         0.566    477   514   521   521    4.4
+  50 14 t with d.f. = 4       0.566    576   616   625   618    4.2
+  50 31 RST a3=1 a4=4.2       0.566    518   625   628   607    8.9
+  50 33 RST a3=1 a4=8.4       0.566    535   619   620   599    6.4
+  50 34 RST a3=2 a4=11.4      0.566    536   760   757   716   18.0
+  50 36 RST a3=2 a4=15.6      0.566    549   684   680   650   10.1
+  50 39 Bimodal .75N + .25N   0.566    500   705   705   660   16.0
+
