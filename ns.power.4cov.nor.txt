@@ -2,8 +2,9 @@
 This file gives the empirical power for the generalized
 normal scores (GNS) test that is described in the manuscript:
 
-O'Gorman, T. W. (2020) A Generalized Normal Scores Test of Significance
-for any Coefficient in a Linear Model. (Submitted for publication.)
+O'Gorman, T. W. (2020) A Generalized Normal Scores Test that
+Increases the Power of a Test of Significance
+for a Coefficient in a Linear Model. (Submitted for publication.
 
 In each of these simulations 1000 data sets were generated and the
 traditional t-test and the GNS test were used to test the null hypothesis
