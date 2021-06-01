@@ -2,7 +2,7 @@ This file describes the output from a computer program that was
 used to estimate the signifiance level and the power of the 
 GNS test. The GNS test is described in:
 
-O'Gorman, T. W. (2020) A Generalized Normal Scores Test that 
+O'Gorman, T. W. (2021) A Generalized Normal Scores Test that 
 Increases the Power of a Test of Significance
 for a Coefficient in a Linear Model. (Submitted for publication.)
 
